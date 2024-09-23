@@ -1,0 +1,250 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.9em;
+  background-color: #3AAFA9;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+a {
+  color: #17252A;
+  text-decoration: none;
+  display: inline;
+}
+
+
+h1 {
+  font-size: 3em;
+  color: #17252A;
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #DEF2F1;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  font-family: "League Spartan", sans-serif;
+}
+
+em{
+  color: #78dddb;
+}
+
+p {
+  color: #DEF2F1;
+  line-height : 1.5em;
+  
+ 
+}
+
+ul, li{
+  color: #17252A;
+  line-height : 1.5em;
+  
+}
+
+header{
+  background-color: white;
+  padding: 20px 50px;
+}
+section {
+  padding: 60px 20px;
+}
+
+.cta {
+  display: inline-block;
+  background: white;
+  color: #17252A;
+  border-radius: 50px;
+  padding: 20px 30px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.cta:hover {
+  background: linear-gradient(#78dddb,#299993);
+  text-decoration: none;
+}
+
+footer{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items:last baseline;
+  text-align: center;
+  background-color:#17252A;
+  height: 200px;
+  padding: 40px;
+  letter-spacing: 0.09em;
+  color: white;
+  font-size: 10px;
+  font-style: italic;
+  
+}
+
+.footer-icone{
+  position: absolute;
+  margin-bottom: 50px;
+  
+}
+
+.lien-icone {
+  color: #DEF2F1;
+  margin-right: 20px;
+}
+
+.lien-icone:hover {
+  opacity: 0.5;
+}
+
+
+nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  margin-left: 30px;
+}
+
+
+nav img {
+  width: 50%;
+  
+}
+
+.section-contact h2 {
+  color:#17252A;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  color: white;
+}
+
+.form-nom-email {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.form-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  padding: 15px;
+  border-radius: 3px;
+  border: none;
+  
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+/*là c'est pour CSS du bouton*/
+
+input[type='submit'] {
+  width: 200px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #3AAFA9;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none; /* Caché par défaut */
+  transition: opacity 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: #299993; /* Change de couleur au survol */
+}
+
+/*Responsive design*/
+
+/*Réduisez la taille des titres à  2em  .
+
+Remplacez les  width  pour  .accueil-introduction  et  form  par la propriété  max-width  sur la page d'accueil, avec une valeur de  1000px*/
+
+
+/*Tous les éléments qui sont disposés à l'horizontale basculent à la verticale à partir de la taille d'écran  996px  (introduction, grilles photos et formulaire)*/
+
+/*Les liens de navigation du header passent à la verticale et sont centrés.*/
+
+@media screen and (max-width: 996px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header nav img {
+    width: 40%;
+  }
+
+  header,
+  footer {
+    padding: 10px 10px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+
+  }
+
+  h2{
+    font-size: 1.2em;
+  }
+
+  
+  
+
+  section {
+    padding: 50px 20px 50px 20px;
+  
+  }
+  
+
+  nav a {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+
